@@ -11,7 +11,7 @@
   <packaging>war</packaging>
   <name>cohort webService </name>
   <description>gestion des api rest et soap  de l'application </description>
-  
+    
   <dependencies>
   <dependency>
         <groupId>sn.edacy</groupId>

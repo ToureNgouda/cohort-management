@@ -10052,3 +10052,29 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Unrecognise
 2018-04-08 18:35:44,042 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2018-04-08 18:35:44,047 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2018-04-08 18:35:44,118 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-08 19:55:56,378 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-04-08 19:55:56,418 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-08 19:55:56,420 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-04-08 19:55:56,469 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-08 19:57:53,848 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-04-08 19:57:53,876 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-08 19:57:53,887 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-04-08 19:57:53,910 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-08 20:04:05,366 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-04-08 20:04:05,383 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-08 20:04:05,386 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-04-08 20:04:05,436 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-08 20:04:10,129 [Worker-47] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\MesProjetsJEE\cohort-management\cohort-web
+2018-04-08 20:04:10,137 [Worker-47] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B wildfly:deploy
+2018-04-08 20:20:36,613 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-04-08 20:20:36,697 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-08 20:20:36,713 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-04-08 20:20:36,739 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-08 20:21:24,704 [Worker-47] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\MesProjetsJEE\cohort-management\cohort-web
+2018-04-08 20:21:24,713 [Worker-47] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B wildfly:deploy
+2018-04-08 20:22:15,098 [Worker-48] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\MesProjetsJEE\cohort-management
+2018-04-08 20:22:15,109 [Worker-48] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install
+2018-04-08 20:22:38,691 [Worker-49] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\MesProjetsJEE\cohort-management\cohort-web
+2018-04-08 20:22:38,701 [Worker-49] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B wildfly:deploy
+2018-04-08 20:25:42,798 [Worker-51] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-04-08 20:25:42,816 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

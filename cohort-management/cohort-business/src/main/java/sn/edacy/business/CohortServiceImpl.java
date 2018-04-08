@@ -49,8 +49,8 @@ public class CohortServiceImpl implements CohortServiceL, CohortServiceR{
 	}
      
 	public void deleteCohort(Long idCohort) {
-		Cohort cohort=getCohort(idCohort);
-	     em.remove(cohort);
+		
+	     em.remove(em.find(Cohort.class, idCohort));
 		
 	}
 

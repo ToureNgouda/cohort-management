@@ -21,7 +21,6 @@ INDEX VERSION 1.130+C:\MesProjetsJEE\.metadata\.plugins\org.eclipse.jdt.core
 3382250361.index
 1112905187.index
 935401107.index
-3169451739.index
 496627462.index
 4259284536.index
 749859950.index
