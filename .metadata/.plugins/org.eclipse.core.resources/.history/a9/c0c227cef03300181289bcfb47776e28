@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link  rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+	<title>Cohort</title>
+</head>
+ 
+<body>
+
+    <div id="container" class="contanainer">
+    
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#"><strong>Bienvenu sur l'application de gestion d'une cohort</strong></a>
+        </div>
+
+        <!-- Top Navigation: Right Menu -->
+        <ul class="nav navbar-right " style="margin-left:50px;">
+
+          <li> <h:link outcome="/cohort/create">Gestion des cohort</h:link> </li>
+          <li> <h:link outcome="/cohort/teachers">Gestion des profs</h:link> </li>
+    
+        </ul>
+        </nav>
+        
+        
+        <p>
+      		
+        </p>
+
+        <br style="clear: both" />
+     </div>
+
+</body>
+</html>

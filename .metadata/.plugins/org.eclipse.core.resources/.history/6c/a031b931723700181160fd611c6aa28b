@@ -1,0 +1,45 @@
+package sn.edacy.web;
+
+import java.util.ArrayList;
+import java.util.List;
+import javax.annotation.PostConstruct;
+import javax.enterprise.inject.Model;
+import javax.inject.Inject;
+import sn.edacy.business.CohortServiceL;
+import sn.edacy.model.Cohort;
+
+@Model
+public class CohortBM {
+	 @Inject   //injection des dependences 
+     private CohortServiceL cohortServiceL;
+	 
+	 public void addCohort() {
+		cohortServiceL.addCohort(cohort);
+	}
+
+	public Cohort getCohort() {
+		return cohort;
+	}
+
+	public void setCohort(Cohort cohort) {
+		this.cohort = cohort;
+	}
+
+	private Cohort cohort = new Cohort();
+	private List<Cohort> listCohorts = new ArrayList<Cohort>();
+	 
+    public List<Cohort> getListCohorts() {
+		return listCohorts;
+	}
+
+	public void setListCohorts(List<Cohort> listCohorts) {
+		this.listCohorts = listCohorts;
+	}
+
+	@PostConstruct
+	public void init() {
+			listCohorts = cohortServiceL.getAllCohort();
+	} 
+	 
+	 
+}

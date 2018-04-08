@@ -1,0 +1,13 @@
+package sn.edacy.web;
+
+import javax.enterprise.inject.Model;
+import javax.inject.Inject;
+
+import sn.edacy.business.CohortServiceL;
+
+@Model
+public class CohortBM {
+	 @Inject     //injection des dependences 
+     private CohortServiceL cohortService;
+	 
+}

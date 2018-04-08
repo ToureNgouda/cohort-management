@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+
+   <ui:composition template="../template.xhtml">
+   		<link  rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+     <ui:define name="title">Gestion des Cohorts</ui:define>
+      <div id="container">
+     <!-- redefinition du titre  -->
+     <ui:define name="pageActive"><strong>Bienvenu sur l'application de gestion d'une cohort</strong></ui:define>
+       <ui:define name="menu">
+        <li > <a  href="../index.xhtml">Accueil</a> </li>
+          <li class="active"><a  href="#"> Gestion des cohort</a> </li>
+          <li > <a href="teachers.xhtml">Gestion des profs</a> </li>
+          <li > <a href="../index.xhtml">Deconnexion</a> </li>
+          </ui:define> 
+          </div>
+          </ui:composition>

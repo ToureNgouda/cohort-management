@@ -1,0 +1,14 @@
+package sn.edacy.webService;
+
+import javax.ejb.EJB;
+import javax.ejb.Stateless;
+import javax.jws.WebService;
+
+import sn.edacy.business.CohortServiceL;
+@Stateless
+@WebService
+public class CohortSoap {
+	@EJB
+	private CohortServiceL cohortServiceL;
+
+}

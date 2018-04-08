@@ -1,0 +1,11 @@
+package sn.edacy.webService;
+
+import javax.ejb.Stateless;
+import javax.ws.rs.Path;
+
+@Path
+@Stateless 
+public class CohortRest {
+	
+
+}

@@ -1,0 +1,27 @@
+package sn.edacy.webService;
+
+import java.util.List;
+
+import javax.ejb.EJB;
+import javax.ejb.Stateless;
+import javax.jws.WebMethod;
+import javax.jws.WebService;
+
+import sn.edacy.business.CohortServiceL;
+import sn.edacy.model.Cohort;
+@Stateless
+@WebService
+public class CohortSoap {
+	@EJB
+	private CohortServiceL cohortServiceL;
+    @WebMethod
+	public String addCohort(Cohort c) {
+		cohortServiceL.addCohort(c);
+		return "message: cohort created";
+	}
+    @WebMethod
+	public List<Cohort> getAllCohort() {
+		return cohortServiceL.getAllCohort();
+	}
+
+}
