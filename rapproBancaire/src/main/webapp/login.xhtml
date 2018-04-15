@@ -26,20 +26,34 @@
 
 <h:body>
 
+	<div class="container">
 
-   <div id="cont">
-      <h:form>
-                 <h:panelGrid columns="2">
-                   <h:outputLabel value="login:  " style="margin-top:20px;"></h:outputLabel>
-                   <h:inputText id="login" value="#{loginController.login}"/>
-                   <h:outputLabel value="mot de passe: " style="margin-top:20px;"></h:outputLabel>
-                   <h:inputText id="mdp" value="#{loginController.mdp}"/>
-                   <h:commandButton action="#{loginController.check}" value="se connecter" class="btn btn-primary"></h:commandButton>
-                 </h:panelGrid>
-               </h:form>
-      
-      </div>  
-   
+		<div class="row" style="margin-top:20px">
+		    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+				<h:form>
+					<fieldset>
+						<h2>Connexion</h2>
+						<hr class="colorgraph" />
+						<div class="form-group">
+							<h:inputText id="login" value="#{loginController.login}" styleClass="form-control input-lg" >
+								<f:passThroughAttribute name="placeholder" value="Votre login"/>
+							</h:inputText>
+						</div>
+						<div class="form-group">
+							<h:inputText id="mdp" value="#{loginController.mdp}" styleClass="form-control input-lg" >
+								<f:passThroughAttribute name="placeholder" value="Votre mot de passe"/>
+							</h:inputText>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
+								<h:commandButton action="#{loginController.check}" value="se connecter" class="btn btn-lg btn-primary btn-block" />
+							</div>
+						</div>
+					</fieldset>
+				</h:form>
+			</div>
+		</div>
+	</div>
 
 </h:body>
 </html>
