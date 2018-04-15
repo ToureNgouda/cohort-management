@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns="http://java.sun.com/xml/ns/javaee" 
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
+  version="3.0">
+  <display-name>rappro application</display-name>
+  
+    <!-- Changer cette valeur à "Production" lors du déploiement final de l'application -->
+  <context-param>
+     <param-name>javax.faces.PROJECT_STAGE</param-name>
+     <param-value>Development</param-value>
+   </context-param>
+   <!-- Déclaration du contrôleur central de JSF : la FacesServlet -->
+  <!-- Mapping : association des requêtes dont le fichier porte l'extension .xhtml à la FacesServlet -->
+  <welcome-file-list>
+      <welcome-file>login.xhtml</welcome-file>
+</welcome-file-list>
+<!-- /////////// -->
+<!-- [Optional] Session timeout -->
+  
+  <session-config>
+    <session-timeout>60</session-timeout>
+  </session-config>
+ 
+</web-app>

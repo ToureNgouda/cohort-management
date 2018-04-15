@@ -1,0 +1,97 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>sn.edacy</groupId>
+  <artifactId>rapproBancaire</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>rapproBancaire Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+  
+  <!-- si tous les plugins ne se trouvent pas dans  la meme repository-->
+  <repositories>
+    <repository>
+        <id>jboss-public-repository-group</id>
+        <name>JBoss Public Maven Repository Group</name>
+        <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+        <layout>default</layout>
+        <releases>
+          <enabled>true</enabled>
+          <updatePolicy>never</updatePolicy>
+        </releases>
+       <snapshots>
+         <enabled>true</enabled>
+         <updatePolicy>never</updatePolicy>
+      </snapshots>
+    </repository>
+  </repositories>   
+  
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+  			<groupId>org.wildfly.bom</groupId>
+  			<artifactId>wildfly-javaee7-with-tools</artifactId>
+  			<version>10.1.0.Final</version>
+  			<type>pom</type>
+  			<scope>import</scope>
+  		</dependency>
+  		
+       <!-- https://mvnrepository.com/artifact/javax.inject/javax.inject -->
+<dependency>
+    <groupId>javax.inject</groupId>
+    <artifactId>javax.inject</artifactId>
+    <version>1</version>
+</dependency>
+   
+   
+   <!-- Import the EJB API, we use provided scope as the API is included in JBoss EAP -->
+    <!-- https://mvnrepository.com/artifact/javax.enterprise/cdi-api -->
+<dependency>
+    <groupId>javax.enterprise</groupId>
+    <artifactId>cdi-api</artifactId>
+    <version>2.0</version>
+    <scope>provided</scope>
+</dependency>
+    
+  <!-- https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api -->
+<dependency>
+    <groupId>javax.persistence</groupId>
+    <artifactId>javax.persistence-api</artifactId>
+    <version>2.2</version>
+   
+</dependency>
+
+    
+    <dependency>
+	  <groupId>org.apache.commons</groupId>
+	  <artifactId>commons-lang3</artifactId>
+	  <version>3.7</version>
+	</dependency>
+    
+   
+   
+  </dependencies>
+  <build>
+    <finalName>${project.artifactId}</finalName>
+    <plugins>
+
+		<!-- Assemble artifact as war -->
+  		<plugin>  
+  		  <artifactId>maven-war-plugin</artifactId>  
+ 		  <groupId>org.apache.maven.plugins</groupId> 	 
+  		  	  <version>2.6</version>  
+ 	   </plugin>  
+	  	<plugin>
+			<groupId>org.wildfly.plugins</groupId>
+			<artifactId>wildfly-maven-plugin</artifactId>
+			<version>1.0.2.Final</version>
+		</plugin>    
+    </plugins>
+  </build>
+</project>

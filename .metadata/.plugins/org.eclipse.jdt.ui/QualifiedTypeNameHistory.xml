@@ -22,7 +22,6 @@
 <fullyQualifiedTypeName name="javax.ejb.Stateless"/>
 <fullyQualifiedTypeName name="sn.edacy.business.CohortServiceL"/>
 <fullyQualifiedTypeName name="javax.ejb.EJB"/>
-<fullyQualifiedTypeName name="sn.edacy.business.TalentServiceL"/>
 <fullyQualifiedTypeName name="javax.ws.rs.POST"/>
 <fullyQualifiedTypeName name="javax.ws.rs.Path"/>
 <fullyQualifiedTypeName name="javax.ws.rs.Produces"/>
@@ -37,4 +36,10 @@
 <fullyQualifiedTypeName name="sn.edacy.model.Cohort"/>
 <fullyQualifiedTypeName name="javax.ws.rs.FormParam"/>
 <fullyQualifiedTypeName name="javax.inject.Inject"/>
+<fullyQualifiedTypeName name="sn.edacy.business.TalentServiceL"/>
+<fullyQualifiedTypeName name="sn.edacy.business.TalentServiceR"/>
+<fullyQualifiedTypeName name="utils.SearchTalent"/>
+<fullyQualifiedTypeName name="org.apache.commons.lang3.math.NumberUtils"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.Table"/>
 </qualifiedTypeNameHistroy>

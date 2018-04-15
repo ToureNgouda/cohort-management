@@ -13,12 +13,12 @@ public class CohortBM {
 	 @Inject   //injection des dependences 
      private CohortServiceL cohortServiceL;
 	 private Cohort cohort = new Cohort();
-     private List<Cohort> listCohorts = new ArrayList<Cohort>();
+     //private List<Cohort> listCohorts = new ArrayList<Cohort>();
      
-    @PostConstruct
- 	public void init() {
- 			listCohorts = cohortServiceL.getAllCohort();
- 	} 
+//    @PostConstruct
+// 	public void init() {
+// 			listCohorts = cohortServiceL.getAllCohort();
+// 	} 
  	 	
 	 public void addCohort() {
 		cohortServiceL.addCohort(cohort);
@@ -35,13 +35,13 @@ public class CohortBM {
 	public void setCohort(Cohort cohort) {
 		this.cohort = cohort;
 	} 
-    public List<Cohort> getListCohorts() {
-		return listCohorts;
-	}
-
-	public void setListCohorts(List<Cohort> listCohorts) {
-		this.listCohorts = listCohorts;
-	}
+//    public List<Cohort> getListCohorts() {
+//		return listCohorts;
+//	}
+//
+//	public void setListCohorts(List<Cohort> listCohorts) {
+//		this.listCohorts = listCohorts;
+//	}
 
 	
 	 

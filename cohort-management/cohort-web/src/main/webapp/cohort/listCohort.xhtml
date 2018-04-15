@@ -51,7 +51,7 @@
                        <tr><th>idCohort</th> <th>NameCohort</th></tr>
                      </thead>
                      <tbody>
-                       <ui:repeat var="listC" value="#{cohortBM.listCohorts}">
+                       <ui:repeat var="listC" value="#{cohortBM.allCohort}">
                        <tr>
                           <td>
                            <h:outputText value="#{listC.id}"></h:outputText>
@@ -61,6 +61,7 @@
                           </td>
                        </tr>
                        </ui:repeat>
+                       <tr><td style="color: red;">le nombre de cohort est :#{cohortBM.allCohort.size()}</td>  <td>     </td>  </tr>
                      </tbody>
                    </table>
                 </div>

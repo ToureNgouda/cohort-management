@@ -5,6 +5,7 @@ import java.util.List;
 import javax.ejb.Local;
 
 import sn.edacy.model.Talent;
+import utils.SearchTalent;
 
 @Local
 public interface TalentServiceL {
@@ -13,5 +14,5 @@ public interface TalentServiceL {
 	public void updateTalent(Talent t);
 	public void DeleteTalent(Long idTalent);
 	public List<Talent> getTalents(); //recupere la liste des talents dans une cohorte
-
+    public List<Talent> searchTalents(SearchTalent searchTalent);
 }

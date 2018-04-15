@@ -103,6 +103,8 @@ public class TalentBM {
 	 * on fera une recherche sur l'id du cohort
 	 * la methode retourne la liste des talents dans une cohort 
 	 */
-
+     public void searchTalents() {
+    	 listTalents = talentServiceL.searchTalents(searchTalent);
+     }
 
 }

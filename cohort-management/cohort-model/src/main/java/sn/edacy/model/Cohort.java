@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.XmlTransient;
 @Entity
 @Table(name="cohorts")
 public class Cohort {
-
+    
 	@Id
 	@GeneratedValue (strategy = GenerationType.AUTO)
 	@Column(name="id")

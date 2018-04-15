@@ -15,7 +15,7 @@
   	<module>cohort-webService</module>
   </modules>
   
-  <!-- si tous les plugin ne se trouvent pas la meme repository-->
+  <!-- si tous les plugins ne se trouvent pas dans  la meme repository-->
   <repositories>
     <repository>
         <id>jboss-public-repository-group</id>

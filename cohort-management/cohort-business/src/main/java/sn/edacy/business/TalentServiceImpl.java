@@ -6,16 +6,18 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
-
+import org.apache.commons.lang3.math.NumberUtils;
 import sn.edacy.model.Talent;
+import utils.SearchTalent;
+
 /*
  * ejb session accessible en local 
  * et a distance le nom publie dans le jndi est TalentS
  */
 @Stateless(name="TalentS")   
-public class TalentServiceImpl implements TalentServiceL,TalentServiceR {
+public class TalentServiceImpl implements TalentServiceL, TalentServiceR {
 	@PersistenceContext(unitName="UP_COHORT")  
-	private EntityManager em;
+	private EntityManager em; 
 
 	public void addTalent(Talent t) {
 		//if(t.getAge()!=0 & t.getFullName()!=null) {
@@ -43,5 +45,16 @@ public class TalentServiceImpl implements TalentServiceL,TalentServiceR {
 		Query query =  em.createQuery("select t from Talent t ");
 		return query.getResultList();
 	}
-    
+    /*
+     * retourne la liste des talents dans une cohorte 
+     * @param searchTalent "id du cohort"
+     * 
+     * */
+	public List<Talent> searchTalents(SearchTalent searchTalent) {
+		 Long idC = NumberUtils.toLong(searchTalent.getIdentifTalent());
+		 Query query = em.createQuery("select t from Talent t where t.cohort.id= :ident");
+		 query.setParameter("ident", idC);
+		return query.getResultList();
+	}
+
 }

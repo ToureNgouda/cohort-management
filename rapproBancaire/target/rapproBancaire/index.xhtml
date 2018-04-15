@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+
+   <ui:composition template="template.xhtml">
+   <link  rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+   	<ui:define name="content">
+   	<div  class="container" style="margin-top: 20px;">
+            <div class="navbar navbar-inverse "  >
+             <div class="navbar-header">
+             <h1 class="navbar-brand" ></h1>
+            </div>
+        <!-- Top Navigation: Right Menu -->
+        <div class="form-group">
+        <ul class="nav navbar-nav" style="padding-left: 10px;" >
+        <ui:insert name="menu">
+        <li class="active" > <h:link  outcome="index">Gestion-rapprochement</h:link> </li>
+          <li ><h:link  outcome="/historique"> Gestion des historiques</h:link> </li>
+          <li > <h:link outcome="/tresorie">Gestion de la tresorie</h:link> </li>
+          <li > <h:link outcome="login">Deconnexion</h:link> </li>
+          </ui:insert>
+        </ul>
+        </div> 
+        </div></div>
+      <div class="col-md-6 col-sm-6 col-xs-12" style="margin-top: 20px;">
+       <div class="panel panel-info">
+       <div class="panel panel-heading">Ecriture comptable</div>
+         <div class="panel panel-body">
+            <table class="table table-striped">
+                     <thead>
+                       <tr><th>date</th> <th>libelle</th> <th>debit</th> <th>credit</th></tr>
+                     </thead>
+                     <tbody>
+                      
+                      <tr> <th>01/02/217</th><th>Solde début de mois</th> <th>26750</th></tr>
+                     <tr> <th>03/02/2017</th> <th>Retrait d'espèce chéque n°32465</th><th></th><th>5000</th></tr>
+                     <tr> <th>14/02/2017</th> <th>Remise de chéque n°5479</th><th>10000</th><th></th>  </tr>
+                     <tr> <th>19/02/2017</th>Chéque n°32466 au fournisseur D<th></th> <th>13000</th>   </tr>
+                     <tr> <th>21/02/2017</th><th>Virement au fournisseur Somon</th> <th></th> <th>3000</th>  </tr>
+                     <tr> <th>25/02/2017</th><th>Dépôt d'espèces</th> <th>6600</th> <th></th>  </tr>
+                      <tr> <th>26/02/2017</th><th>Chéque n°54897 client Diop</th> <th>45000</th> <th></th>  </tr>
+                      <tr> <th>27/02/2017</th><th>Chéque n°32467 loyer</th> <th></th> <th>33500</th>  </tr>
+                      <tr> <th></th> <th>Totaux</th><th>88835</th><th>54500</th></tr>
+                      <tr> <th></th> <th>solde dibiteur</th><th></th><th>535850</th></tr>
+                     </tbody>
+                   </table>
+            
+         </div>
+         
+         </div>
+      </div>
+         
+         
+         
+      <div class="col-md-6 col-sm-6 col-xs-12" style="margin-top: 20px;">
+       <div class="panel panel-info">
+         <div class="panel panel-heading">Releve Bancaire</div>
+         <div class="panel panel-body">
+            
+            <table class="table table-striped">
+                     <thead>
+                       <tr><th>date</th> <th>libelle</th> <th>debit</th> <th>credit</th></tr>
+                     </thead>
+                     <tbody>
+                     
+                      <tr> <th>01/02/217</th><th>Solde début de mois</th> <th>26750</th></tr>
+                     <tr> <th>03/02/2017</th> <th>Retrait d'espèce chéque n°32465</th><th></th><th>5000</th></tr>
+                     <tr> <th>14/02/2017</th> <th>Remise de chéque n°5479</th><th>10000</th><th></th>  </tr>
+                     <tr> <th>19/02/2017</th><th></th> <th></th> <th></th>  </tr>
+                     <tr> <th></th><th></th> <th></th> <th></th>  </tr>
+                     <tr> <th></th><th></th> <th></th> <th></th>  </tr>
+                      <tr> <th></th><th></th> <th></th> <th></th>  </tr>
+                      <tr> <th></th><th></th> <th></th> <th></th>  </tr>
+                     </tbody>
+                   </table>
+            
+         </div>
+         
+         </div>
+      </div>
+        
+     </ui:define>
+  </ui:composition>
+    
+</html>

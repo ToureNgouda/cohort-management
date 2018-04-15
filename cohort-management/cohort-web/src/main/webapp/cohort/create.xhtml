@@ -52,14 +52,14 @@
             <h:form>
                  <h:panelGrid columns="3">
                  <div class="form-group">
-                   <h:outputLabel value="Entrer le nom de la cohort:  "></h:outputLabel>
-                   <h:inputText id="cohort" value="#{talentBM.cohort.nom}"/></div>
-                   <h:commandButton action="#{talentBM.getTalents}" value="Chercher" class="btn btn-primary">  </h:commandButton>
+                   <h:outputLabel value="Entrer id de la cohort:  "></h:outputLabel>
+                   <h:inputText id="cohort" value="#{talentBM.searchTalent.identifTalent}"/></div>
+                   <h:commandButton action="#{talentBM.searchTalents}" value="Chercher" class="btn btn-primary">  </h:commandButton>
                       </h:panelGrid>
                </h:form></div>
                <div class="col-md-6 col-sm-6 col-xs-12" style="margin-top: 20px;">
                      <div class="panel panel-info">
-                        <div class="panel-heading">liste des talents dans une cohorte</div>
+                        <div class="panel-heading">liste des talents de la cohort #{talentBM.searchTalent.identifTalent} </div>
                         <div class="panel-body">
                            <table class="table table-striped">
                            <thead>
@@ -82,6 +82,7 @@
                           </td>
                        </tr>
                        </ui:repeat>
+                       <tr><td style="color: red;">le nombre de talent est :#{talentBM.listTalents.size()} </td>  <td>   </td>  <td>   </td>   <td>  </td></tr>
                      </tbody>
                    </table>
                         </div>
